@@ -12,23 +12,51 @@
     />
   </head>
   <body>
-    <nav
-      class="h-[11vh] p-2 lg:p-5 w-full bg-zinc-800 flex items-center justify-between font-[Quicksand]"
-    >
-      <div class="logo h-[9vh]">
-        <img
-          class="w-full h-full object-cover"
-          src="https://suvidhafoundationedutech.org/img/SuvidhaLogo.png"
-          alt="suvidhafoundationedutech-logo"
-        />
-      </div>
-      <div class="flex items-center justify-center gap-[80px]">
-        <div class="nav-links hidden lg:flex gap-10 text-zinc-100 font-regular">
-          <p class="text-[16px]">Events</p>
-          <p class="text-[16px]">Gallery</p>
-          <p class="text-[16px]">Contact</p>
+    <main class="relative overflow-hidden">
+      <nav
+        class="h-[11vh] p-2 lg:p-5 w-full bg-zinc-800 flex items-center justify-between font-[Quicksand] fixed left-0 top-0"
+      >
+        <div class="logo h-[9vh]">
+          <img
+            class="w-full h-full object-cover"
+            src="https://suvidhafoundationedutech.org/img/SuvidhaLogo.png"
+            alt="suvidhafoundationedutech-logo"
+          />
         </div>
-        <div class="buttons text-white hidden lg:flex items-center justify-center gap-3">
+        <div class="flex items-center justify-center gap-[80px]">
+          <div
+            class="nav-links hidden lg:flex gap-10 text-zinc-100 font-regular"
+          >
+            <p class="text-[16px]">Events</p>
+            <p class="text-[16px]">Gallery</p>
+            <p class="text-[16px]">Contact</p>
+          </div>
+          <div
+            class="buttons text-white hidden lg:flex items-center justify-center gap-3"
+          >
+            <a
+              href="#"
+              class="text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
+              >Apply for Internship</a
+            >
+            <a
+              href="#"
+              class="text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
+              >Help Now</a
+            >
+          </div>
+        </div>
+        <i
+          class="menu-icon ri-menu-line sm:flex lg:hidden text-xl text-white bg-zinc-700 rounded-sm px-2 py-1"
+        ></i>
+      </nav>
+
+      <div
+        class="menu absolute top-0 right-[-100%] h-[100vh] w-[30vw] bg-zinc-900 lg:hidden flex flex justify-between"
+      >
+        <div
+          class="menu-items text-zinc-100 font-regular px-4 py-10 mt-10 flex flex-col gap-6"
+        >
           <a
             href="#"
             class="text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
@@ -39,10 +67,35 @@
             class="text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
             >Help Now</a
           >
+          <p class="text-[16px] text-white">Events</p>
+          <p class="text-[16px] text-white">Gallery</p>
+          <p class="text-[16px] text-white">Contact</p>
+        </div>
+        <div class="close-btn h-full w-[16%] px-1 py-4">
+          <i
+            class="close-icon ri-close-large-line sm:flex lg:hidden text-xl text-white bg-zinc-700 rounded-sm px-2 py-1"
+          ></i>
         </div>
       </div>
-      <i class="ri-menu-line sm:flex lg:hidden text-xl text-white bg-zinc-700 rounded-sm px-2 py-1"></i>
-    </nav>
-    <main class=""></main>
+
+      <div class="page1 h-screen w-full bg-red-300"></div>
+      <div class="page1 h-screen w-full bg-green-500"></div>
+      <div class="page1 h-screen w-full bg-zinc-600"></div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
