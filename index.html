@@ -31,19 +31,13 @@
             <p class="text-[16px]">Gallery</p>
             <p class="text-[16px]">Contact</p>
           </div>
-          <div
-            class="buttons text-white hidden lg:flex items-center justify-center gap-3"
-          >
-            <a
-              href="#"
-              class="text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
-              >Apply for Internship</a
-            >
-            <a
-              href="#"
-              class="text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
-              >Help Now</a
-            >
+          <div class="buttons text-white hidden lg:flex items-center justify-center gap-3">
+              <div class="btns-container overflow-hidden flex items-center justify-center bg-[#e2b912]">
+                <a href="#" class="btns relative p-2">Apply for Internship</a>
+              </div>
+            <div class="btns-container">
+              <a href="#" class="btns relative text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold" >Help Now</a>
+            </div>
           </div>
         </div>
         <i
@@ -52,7 +46,7 @@
       </nav>
 
       <div
-        class="menu absolute top-0 right-[-100%] h-[100vh] w-[30vw] bg-zinc-900 lg:hidden flex flex justify-between"
+        class="menu absolute top-0 right-[-100%] h-[100vh] w-[100vw] md:w-[40vw] bg-zinc-900 lg:hidden flex flex justify-between"
       >
         <div
           class="menu-items text-zinc-100 font-regular px-4 py-10 mt-10 flex flex-col gap-6"
@@ -73,7 +67,7 @@
         </div>
         <div class="close-btn h-full w-[16%] px-1 py-4">
           <i
-            class="close-icon ri-close-large-line sm:flex lg:hidden text-xl text-white bg-zinc-700 rounded-sm px-2 py-1"
+            class="close-icon ri-close-large-line flex items-center justify-center sm:flex lg:hidden text-xl text-white bg-zinc-600 rounded-sm px-2 py-2"
           ></i>
         </div>
       </div>
@@ -99,3 +93,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold -->
