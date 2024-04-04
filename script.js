@@ -36,49 +36,36 @@ const menuBtn = () =>{
     })
 }
 
-let clutter = "";
-
-document.querySelector(".btns").textContent.split("").forEach((e) => {
-    if (e === " ")
-        clutter += "<span>&nbsp;</span>";
-    else
-        clutter += `<span class="inline-block">${e}</span>`;
-});
-
-document.querySelector(".btns-container a").innerHTML = clutter;
-
-// Function to animate the spans when mouse is over
-function animateOnMouseOver() {
-    gsap.to(".btns-container a span", {
-        y: "-200%",
-        stagger: -0.03,
-        ease: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+const page1Swiper = () =>{
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+    //   spaceBetween: 30,
+    loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev"
+      },
+    //   on: {
+    //     autoplayTimeLeft(s, time, progress) {
+    //       progressCircle.style.setProperty("--progress", 1 - progress);
+    //       progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    //     }
+    //   }
     });
 }
-
-// Function to animate the spans when mouse leaves
-function animateOnMouseLeave() {
-    gsap.to(".btns-container a span", {
-        y: "0%",
-        stagger: 0.03, // Adjust the stagger value if needed
-        ease: "cubic-bezier(0.645, 0.045, 0.355, 1)"
-    });
-}
-
-// Add mouseover event listener
-document.querySelector(".btns-container a").addEventListener("mouseover", animateOnMouseOver);
-
-// Add mouseleave event listener
-document.querySelector(".btns-container a").addEventListener("mouseleave", animateOnMouseLeave);
-
-
-
-
-
-
-
 
 
 
 navBarAnime();
 menuBtn();
+page1Swiper();

@@ -10,11 +10,15 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <main class="relative overflow-hidden">
       <nav
-        class="h-[11vh] p-2 lg:p-5 w-full bg-zinc-800 flex items-center justify-between font-[Quicksand] fixed left-0 top-0"
+        class="h-[11vh] z-[99] p-2 lg:p-5 w-full bg-zinc-800 flex items-center justify-between font-[Quicksand] fixed left-0 top-0"
       >
         <div class="logo h-[9vh]">
           <img
@@ -31,12 +35,22 @@
             <p class="text-[16px]">Gallery</p>
             <p class="text-[16px]">Contact</p>
           </div>
-          <div class="buttons text-white hidden lg:flex items-center justify-center gap-3">
-              <div class="btns-container overflow-hidden flex items-center justify-center bg-[#e2b912]">
-                <a href="#" class="btns relative p-2">Apply for Internship</a>
-              </div>
+          <div
+            class="buttons text-white hidden lg:flex items-center justify-center gap-3"
+          >
+            <div class="btns-container bg-[#e2b912]">
+              <a
+                href="#"
+                class="btns relative p-2 text-zinc-900 text-sm no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
+                >Apply for Internship</a
+              >
+            </div>
             <div class="btns-container">
-              <a href="#" class="btns relative text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold" >Help Now</a>
+              <a
+                href="#"
+                class="btns relative text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold"
+                >Help Now</a
+              >
             </div>
           </div>
         </div>
@@ -72,7 +86,57 @@
         </div>
       </div>
 
-      <div class="page1 h-screen w-full bg-red-300"></div>
+      <div class="page1 swiper-div relative overflow-hidden">
+        
+        <div class="swiper mySwiper relative h-[38vh] w-full md:h-[64vh]">
+
+          <div class="overlay absolute left-0 top-0 h-full w-full bg-zinc-100 z-5"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-black h-full">
+              <img
+                class="h-[130%] w-full object-contain"
+                src="./Images/Suvidha-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide text-black">
+              <img
+                class="h-[130%] w-full object-contain"
+                src="./Images/Suvidha-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide text-black">
+              <img
+                class="h-[130%] w-full object-contain"
+                src="./Images/Suvidha-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide text-black">
+              <img
+                class="h-[130%] w-full object-contain"
+                src="./Images/Suvidha-4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide text-black">
+              <img
+                class="h-[130%] w-full object-contain"
+                src="./Images/Suvidha-5.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-btn-next md:bottom-[160px] md:right-[16px]">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="swiper-btn-prev md:bottom-[160px] md:left-[16px]">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
       <div class="page1 h-screen w-full bg-green-500"></div>
       <div class="page1 h-screen w-full bg-zinc-600"></div>
     </main>
@@ -90,6 +154,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
