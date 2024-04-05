@@ -55,7 +55,7 @@
           </div>
         </div>
         <i
-          class="menu-icon ri-menu-line sm:flex lg:hidden text-xl text-white bg-zinc-700 rounded-sm px-2 py-1"
+          class="menu-icon ri-menu-line sm:flex items-center justify-center lg:hidden text-xl text-white rounded-sm px-4 py-2 bg-zinc-700"
         ></i>
       </nav>
 
@@ -79,69 +79,120 @@
           <p class="text-[16px] text-white">Gallery</p>
           <p class="text-[16px] text-white">Contact</p>
         </div>
-        <div class="close-btn h-full w-[16%] px-1 py-4">
+        <div class="close-button h-full w-fit px-4 py-4">
           <i
-            class="close-icon ri-close-large-line flex items-center justify-center sm:flex lg:hidden text-xl text-white bg-zinc-600 rounded-sm px-2 py-2"
+            class="close-icon ri-close-large-line flex items-center justify-center sm:flex lg:hidden text-xl text-white bg-zinc-600 rounded-sm px-[5vw] py-[3vw]"
           ></i>
         </div>
       </div>
 
-      <div class="page1 h-screen swiper-div relative overflow-hidden ">
-        <div style="--swiper-navigation-color: #e2b912; --swiper-pagination-color: #e2b912" class="swiper mySwiper h-full">
-          <div class="parallax-bg mt-10 lg:h-full" data-swiper-parallax="-23%"></div>
+      <div class="page1 h-screen swiper-div relative overflow-hidden">
+        <div
+          style="
+            --swiper-navigation-color: #e2b912;
+            --swiper-pagination-color: #e2b912;
+          "
+          class="swiper mySwiper h-full"
+        >
+          <div
+            class="parallax-bg mt-10 lg:h-full"
+            data-swiper-parallax="-23%"
+          ></div>
           <div class="swiper-wrapper lg:h-full">
             <div class="swiper-slide parallax-bg z-20 relative">
-              <img class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover" src="./Images/Suvidha-1.jpg" alt="">
-              <div class="title" data-swiper-parallax="-300">Slide 1</div>
-              <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-              <div class="text" data-swiper-parallax="-100">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                  dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                  laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                  Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                  Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                  tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                </p>
+              <img
+                class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover"
+                src="./Images/Suvidha-1.jpg"
+                alt=""
+              />
+              <div class="flex flex-col items-center justify-center gap-[6vh]">
+                <div class="title mt-[20vh] w-[100vw]" data-swiper-parallax="-300">
+                  <p
+                    class="text-3xl font-bold text-center tracking-wide leading-normal md:text-4xl lg:text-5xl"
+                  >
+                    Bringing Smiles to Millions
+                  </p>
+                </div>
+                <div class="subtitle" data-swiper-parallax="-200"></div>
+                <div
+                  class="text flex gap-10 w-[90vw]"
+                  data-swiper-parallax="-100"
+                >
+                  <p class="btn btn-2 hover-slide-up leading-none">
+                    <span class="span">Donate Now</span>
+                  </p>
+                  <p class="btn btn-2 hover-slide-up leading-none">
+                    <span class="span">Donate Now</span>
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide relative z-20">
-              <img class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover" src="./Images/Suvidha-2.jpg" alt="">
-              <div class="title" data-swiper-parallax="-300">Slide 2</div>
-              <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-              <div class="text" data-swiper-parallax="-100">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                  dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                  laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                  Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                  Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                  tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                </p>
+            <div class="swiper-slide parallax-bg z-20 relative">
+              <img
+                class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover"
+                src="./Images/Suvidha-2.jpg"
+                alt=""
+              />
+              <div class="flex flex-col items-center justify-center gap-[5vh]">
+                <div class="title mt-[20vh] w-[100vw]" data-swiper-parallax="-300">
+                  <p
+                    class="text-3xl font-bold text-center tracking-wide leading-normal md:text-4xl lg:text-5xl"
+                  >
+                    Bringing Smiles to Millions
+                  </p>
+                </div>
+                <div class="subtitle" data-swiper-parallax="-200"></div>
+                <div
+                  class="text flex gap-10 w-[90vw]"
+                  data-swiper-parallax="-100"
+                >
+                  <p class="btn btn-2 hover-slide-up leading-none">
+                    <span class="span">Donate Now</span>
+                  </p>
+                  <p class="btn btn-2 hover-slide-up leading-none">
+                    <span class="span">Donate Now</span>
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide relative z-20">
-              <img class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover" src="./Images/Suvidha-3.jpg" alt="">
-              <div class="title" data-swiper-parallax="-300">Slide 3</div>
-              <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-              <div class="text" data-swiper-parallax="-100">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                  dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                  laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                  Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                  Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                  tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                </p>
+            <div class="swiper-slide parallax-bg z-20 relative">
+              <img
+                class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover"
+                src="./Images/Suvidha-3.jpg"
+                alt=""
+              />
+              <div class="flex flex-col items-center justify-center gap-[5vh]">
+                <div class="title mt-[20vh] w-[100vw]" data-swiper-parallax="-300">
+                  <p
+                    class="text-3xl font-bold text-center tracking-wide leading-normal md:text-4xl lg:text-5xl"
+                  >
+                    Bringing Smiles to Millions
+                  </p>
+                </div>
+                <div class="subtitle" data-swiper-parallax="-200"></div>
+                <div
+                  class="text flex gap-10 w-[90vw]"
+                  data-swiper-parallax="-100"
+                >
+                  <p class="btn btn-2 hover-slide-up leading-none">
+                    <span class="span">Donate Now</span>
+                  </p>
+                  <p class="btn btn-2 hover-slide-up leading-none">
+                    <span class="span">Donate Now</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
       </div>
       <div class="page1 h-screen w-full bg-green-500"></div>

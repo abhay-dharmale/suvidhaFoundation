@@ -10,7 +10,7 @@ const navBarAnime = () =>{
             trigger: "nav",
             start: "top -10%",
             end: "top -40%",
-            scrub: 5
+            scrub: 1
         }
     });
 };
@@ -36,6 +36,9 @@ const menuBtn = () =>{
 };
 
 const page1Swiper = () =>{
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+
     var swiper = new Swiper(".mySwiper", {
         speed: 600,
         parallax: true,
@@ -48,6 +51,16 @@ const page1Swiper = () =>{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+          },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
       });
 };
 
