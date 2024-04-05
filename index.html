@@ -18,7 +18,7 @@
   <body>
     <main class="relative overflow-hidden">
       <nav
-        class="h-[11vh] z-[12] p-2 lg:p-5 w-full bg-zinc-800 flex items-center justify-between font-[Quicksand] fixed left-0 top-0"
+        class="[11vh] z-[12] p-2 lg:p-5 w-full bg-zinc-800 flex items-center justify-between font-[Quicksand] fixed left-0 top-0"
       >
         <div class="logo h-[9vh]">
           <img
@@ -86,55 +86,61 @@
         </div>
       </div>
 
-      <div class="page1 swiper-div relative overflow-hidden">
-        
-        <!-- <div class="overlay absolute left-0 top-0 h-[38vh] w-full bg-zinc-100 z-5"></div> -->
-        <div class="swiper mySwiper relative h-[38vh] w-full md:h-[64vh]">
-
-
-          <div class="swiper-wrapper">
-            <div class="swiper-slide text-black h-full">
-              <img
-                class="h-[130%] w-full object-contain"
-                src="./Images/Suvidha-1.jpg"
-                alt=""
-              />
+      <div class="page1 h-screen swiper-div relative overflow-hidden ">
+        <div style="--swiper-navigation-color: #e2b912; --swiper-pagination-color: #e2b912" class="swiper mySwiper h-full">
+          <div class="parallax-bg mt-10 lg:h-full" data-swiper-parallax="-23%"></div>
+          <div class="swiper-wrapper lg:h-full">
+            <div class="swiper-slide parallax-bg z-20 relative">
+              <img class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover" src="./Images/Suvidha-1.jpg" alt="">
+              <div class="title" data-swiper-parallax="-300">Slide 1</div>
+              <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                  dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                  laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                  Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                  Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                  tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                </p>
+              </div>
             </div>
-            <div class="swiper-slide text-black">
-              <img
-                class="h-[130%] w-full object-contain"
-                src="./Images/Suvidha-2.jpg"
-                alt=""
-              />
+            <div class="swiper-slide relative z-20">
+              <img class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover" src="./Images/Suvidha-2.jpg" alt="">
+              <div class="title" data-swiper-parallax="-300">Slide 2</div>
+              <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                  dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                  laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                  Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                  Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                  tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                </p>
+              </div>
             </div>
-            <div class="swiper-slide text-black">
-              <img
-                class="h-[130%] w-full object-contain"
-                src="./Images/Suvidha-3.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide text-black">
-              <img
-                class="h-[130%] w-full object-contain"
-                src="./Images/Suvidha-4.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide text-black">
-              <img
-                class="h-[130%] w-full object-contain"
-                src="./Images/Suvidha-5.jpg"
-                alt=""
-              />
+            <div class="swiper-slide relative z-20">
+              <img class="z-[-1] absolute top-[0%] left-[0%] -transform-x-[50%] -transform-y-[50%] h-full w-full object-cover" src="./Images/Suvidha-3.jpg" alt="">
+              <div class="title" data-swiper-parallax="-300">Slide 3</div>
+              <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                  dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                  laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                  Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                  Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                  tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="swiper-btn-next md:bottom-[160px] md:right-[16px]">
-            <i class="ri-arrow-right-s-line"></i>
-          </div>
-          <div class="swiper-btn-prev md:bottom-[160px] md:left-[16px]">
-            <i class="ri-arrow-left-s-line"></i>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -159,5 +165,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- text-sm text-zinc-900 no-underline px-4 py-3 rounded-sm bg-[#e2b912] font-semibold -->
