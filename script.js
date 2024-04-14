@@ -48,5 +48,12 @@ const landingPageSwiper = () =>{
   });
 }
 
+const page2Anime = () => {
+
+}
+
+
+
 menuSwiper();
 landingPageSwiper();
+page2Anime();
