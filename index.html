@@ -1,184 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suvidha FoundationEdutech</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-  <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-</head>
-<body>
-  <main>
-    <div class="page1 h-screen w-full min-h-screen relative bg-black">
-      <div class="swiper1 swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide menu">
-            <nav class="h-[70%] w-full flex flex-col items-start justify-start px-8 py-14 gap-8">
-              <span class="intern-btn bg-[#e2b912;]  px-4 py-2 rounded-sm">Apply for Internship</span>
-              <span class="help-btn bg-[#e2b912;]  px-4 py-2 rounded-sm">Help Now</span>
-              <div class="nav-links w-full flex flex-col items-start justify-start gap-4 text-black font-['Bebas Neue'] font-semibold">
-                <h1 class="text-4xl relative">
-                  <p class="nav-link1 cursor-pointer tracking-wide relative uppercase py-[2px]">
-                    Events
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
-                  </p>
-                </h1>
-                <h1 class="text-4xl relative">
-                  <p class="nav-link1 cursor-pointer tracking-wide relative uppercase py-[2px]">
-                    Gallery
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
-                  </p>
-                </h1>
-                <h1 class="text-4xl relative">
-                  <p class="nav-link1 cursor-pointer tracking-wide relative uppercase py-[2px]">
-                    Contact
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
-                  </p>
-                </h1>
-              </div>
-            </nav>
-            <div class="nav-bottom h-[20%] flex items-end justify-center py-2">
-              <p class="text-zinc-400 text-sm text-center mx-auto">swipe left to close the menu</p>
-            </div>
-          </div>
-          <div class="swiper-slide content">
-            <div class="menu-button">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-            <div class="landing-page h-full w-full">
-              <div class="logo h-[8svh] w-full flex items-center justify-end lg:justify-between px-[8vw]">
-                <img class="h-full object-cover" src="./Images/SuvidhaLogo.png" alt="SuvidhaLogo">
-                <div class="social-icons hidden lg:flex items-center justify-center gap-8 -mr-[5vw]">
-                  <i class="ri-facebook-fill"></i>
-                  <i class="ri-linkedin-fill"></i>
-                  <i class="ri-instagram-line"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suvidha FoundationEdutech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="page1 h-screen w-full min-h-screen relative bg-black">
+        <div class="swiper1 swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide menu">
+              <nav
+                class="h-[70%] w-full flex flex-col items-start justify-start px-8 py-14 gap-8"
+              >
+                <span class="intern-btn bg-[#e2b912;] px-4 py-2 rounded-sm"
+                  >Apply for Internship</span
+                >
+                <span class="help-btn bg-[#e2b912;] px-4 py-2 rounded-sm"
+                  >Help Now</span
+                >
+                <div
+                  class="nav-links w-full flex flex-col items-start justify-start gap-4 text-black font-['Bebas Neue'] font-semibold"
+                >
+                  <h1 class="text-4xl relative">
+                    <p
+                      class="nav-link1 cursor-pointer tracking-wide relative uppercase py-[2px]"
+                    >
+                      Events
+                      <span id="line1" class="line"></span>
+                      <span id="line2" class="line"></span>
+                    </p>
+                  </h1>
+                  <h1 class="text-4xl relative">
+                    <p
+                      class="nav-link1 cursor-pointer tracking-wide relative uppercase py-[2px]"
+                    >
+                      Gallery
+                      <span id="line1" class="line"></span>
+                      <span id="line2" class="line"></span>
+                    </p>
+                  </h1>
+                  <h1 class="text-4xl relative">
+                    <p
+                      class="nav-link1 cursor-pointer tracking-wide relative uppercase py-[2px]"
+                    >
+                      Contact
+                      <span id="line1" class="line"></span>
+                      <span id="line2" class="line"></span>
+                    </p>
+                  </h1>
                 </div>
+              </nav>
+              <div
+                class="nav-bottom h-[20%] flex items-end justify-center py-2"
+              >
+                <p class="text-zinc-400 text-sm text-center mx-auto">
+                  swipe left to close the menu
+                </p>
               </div>
-              <div class="landing-page-content h-[92svh] w-full">
-                <div class="swiper mySwiper h-full">
-                  <div class="swiper-wrapper relative">
-                    <div class="swiper-slide relative">
-                      <img class="absolute top-0 left-0 w-full h-full object-cover" src="./Images/Suvidha-1.jpg" alt="">
-                      <div class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9">
-                        <div class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Apply for Internship</span>
-                        </div>
-                        <div class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Watch Video</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img class="absolute top-0 left-0 w-full h-full object-cover" src="./Images/Suvidha-2.jpg" alt="">
-                      <div class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9">
-                        <div class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Apply for Internship</span>
-                        </div>
-                        <div class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Watch Video</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img class="absolute top-0 left-0 w-full h-full object-cover" src="./Images/Suvidha-3.jpg" alt="">
-                      <div class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9">
-                        <div class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Apply for Internship</span>
-                        </div>
-                        <div class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Watch Video</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img class="absolute top-0 left-0 w-full h-full object-cover" src="./Images/Suvidha-4.jpg" alt="">
-                      <div class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9">
-                        <div class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Apply for Internship</span>
-                        </div>
-                        <div class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Watch Video</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img class="absolute top-0 left-0 w-full h-full object-cover" src="./Images/Suvidha-5.jpg" alt="">
-                      <div class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9">
-                        <div class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Apply for Internship</span>
-                        </div>
-                        <div class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium">
-                          <span>Watch Video</span>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+            <div class="swiper-slide content">
+              <div class="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="landing-page h-full w-full">
+                <div
+                  class="logo h-[9svh] lg:h-[8svh] w-full flex items-center justify-end lg:justify-between px-[8vw]"
+                >
+                  <img
+                    class="h-full object-cover"
+                    src="./Images/SuvidhaLogo.png"
+                    alt="SuvidhaLogo"
+                  />
+                  <div
+                    class="social-icons hidden lg:flex items-center justify-center gap-8 -mr-[5vw]"
+                  >
+                    <i class="ri-facebook-fill cursor-pointer"></i>
+                    <i class="ri-linkedin-fill cursor-pointer"></i>
+                    <i class="ri-instagram-line cursor-pointer"></i>
                   </div>
-                  <div class="swiper-btn-next h-10 w-10 absolute bottom-5  right-3 lg:right-[5%] bg-[#e2b8129b]/50 hover:bg-[#e2b8129b]/100 z-[9] flex items-center justify-center rounded-[4px]">
-                    <i class="ri-arrow-right-s-line text-3xl md:text-3xl lg:text-4xl font-bold"></i>
+                </div>
+                <div class="landing-page-content h-[92svh] w-full">
+                  <div class="swiper mySwiper h-full">
+                    <div class="swiper-wrapper relative">
+                      <div class="swiper-slide relative">
+                        <img
+                          class="absolute top-0 left-0 w-full h-full object-cover"
+                          src="./Images/Suvidha-1.jpg"
+                          alt=""
+                        />
+                        <div
+                          class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9"
+                        >
+                          <div
+                            class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Apply for Internship</span>
+                          </div>
+                          <div
+                            class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Watch Video</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="absolute top-0 left-0 w-full h-full object-cover"
+                          src="./Images/Suvidha-2.jpg"
+                          alt=""
+                        />
+                        <div
+                          class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9"
+                        >
+                          <div
+                            class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Apply for Internship</span>
+                          </div>
+                          <div
+                            class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Watch Video</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="absolute top-0 left-0 w-full h-full object-cover"
+                          src="./Images/Suvidha-3.jpg"
+                          alt=""
+                        />
+                        <div
+                          class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9"
+                        >
+                          <div
+                            class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Apply for Internship</span>
+                          </div>
+                          <div
+                            class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Watch Video</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="absolute top-0 left-0 w-full h-full object-cover"
+                          src="./Images/Suvidha-4.jpg"
+                          alt=""
+                        />
+                        <div
+                          class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9"
+                        >
+                          <div
+                            class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Apply for Internship</span>
+                          </div>
+                          <div
+                            class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Watch Video</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="absolute top-0 left-0 w-full h-full object-cover"
+                          src="./Images/Suvidha-5.jpg"
+                          alt=""
+                        />
+                        <div
+                          class="btns h-full w-full items-center justify-center absolute top-[0%] left-[0%] flex flex-col md:flex-row gap-9"
+                        >
+                          <div
+                            class="btn1 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Apply for Internship</span>
+                          </div>
+                          <div
+                            class="btn2 px-5 py-2 text-lg lg:text-xl md:px-8 md:py-3 bg-[#e2b912]/0 border-zinc-100 border-[1px] z-[10] rounded-sm text-zinc-100 font-medium"
+                          >
+                            <span>Watch Video</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-btn-next h-10 w-10 absolute bottom-5 right-3 lg:right-[5%] bg-[#e2b8129b]/50 hover:bg-[#e2b8129b]/100 z-[9] flex items-center justify-center rounded-[4px]"
+                    >
+                      <i
+                        class="ri-arrow-right-s-line text-3xl md:text-3xl lg:text-4xl font-bold"
+                      ></i>
+                    </div>
+                    <div
+                      class="swiper-btn-prev h-10 w-10 absolute bottom-5 right-[18%] md:right-[10%] bg-[#e2b8129b]/50 hover:bg-[#e2b8129b]/100 z-[9] flex items-center justify-center rounded-[4px]"
+                    >
+                      <i
+                        class="ri-arrow-left-s-line text-3xl md:text-3xl lg:text-4xl font-bold"
+                      ></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
                   </div>
-                  <div class="swiper-btn-prev h-10 w-10 absolute bottom-5 right-[18%] md:right-[10%] bg-[#e2b8129b]/50 hover:bg-[#e2b8129b]/100 z-[9] flex items-center justify-center rounded-[4px]">
-                    <i class="ri-arrow-left-s-line text-3xl md:text-3xl lg:text-4xl font-bold"></i>
-                  </div>
-                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="page2 h-fit w-full  lg:p-8 relative md:flex">
+      <div class="page2 h-fit w-full lg:p-8 relative md:flex my-6">
         <div class="page2-left h-[70vh] w-full md:w-1/2 p-4 md:sticky top-0 mb-[40px] md:mb-0">
           <div class="left-content h-full w-full">
-            <img src="./Images/page2-img1.jpg" alt="" class="w-full h-full object-cover object-center rounded-md">
+            <img
+              src="./Images/page2-img1.jpg"
+              alt=""
+              class="w-full h-full object-cover object-center rounded-md"
+            />
           </div>
         </div>
         <div class="page2-right h-fit w-full md:w-1/2 px-5">
-          <div class="text-content flex flex-col md:gap-5 mb-10">
-            <p class="text-xl md:text-2xl text-[#FDBE33] font-semibold md:px-2">Learn About Us</p>
-            <h1 class="text-2xl md:text-5xl text-[#4A4C70] font-semibold md:w-[80%]">Suvidha Foundation (Suvidha Mahila Mandal)</h1>
+          <div class="text-content flex flex-col md:gap-3 my-10">
+            <p class="text-xl md:text-2xl text-[#FDBE33] font-semibold md:px-2">
+              Learn About Us
+            </p>
+            <h1
+              class="text-2xl md:text-3xl text-[#4A4C70] font-semibold md:w-[80%]"
+            >
+              Suvidha Foundation (Suvidha Mahila Mandal)
+            </h1>
           </div>
-            <div class="right-cards h-fit w-full my-5 flex md:flex-col gap-5 bg-[#4A4C70]/10 p-6 rounded-lg">
-              <h4 class="text-xl text-[#FDBE33] font-semibold underline">About</h4>
-              <p class="text-lg tracking-wide leading-2">Suvidha Mahila Mandal is a non-profit organization working to impart education among the financially challenged sections to help them realize parity in education and strength of little minds in building a promising future. The organization has provisions of student internships, student mentorship and the scope to volunteer. Through these programmes, the organization aims to achieve the vision of imparting innovative education that stays with the students forever and equip them for the unforeseen future.</p>
+          <div class="cards-wrapper hidden md:flex md:flex-col">
+            <div
+              class="right-cards h-fit w-full my-2 mt-0 flex md:flex-col gap-5 bg-[#4A4C70]/10 p-6 rounded-lg"
+            >
+              <h4 class="text-xl text-[#FDBE33] font-semibold underline">
+                About
+              </h4>
+              <p class="text-lg md:text-md tracking-wide leading-2">
+                Suvidha Mahila Mandal is a non-profit organization working to
+                impart education among the financially challenged sections to
+                help them realize parity in education and strength of little
+                minds in building a promising future. The organization has
+                provisions of student internships, student mentorship and the
+                scope to volunteer.
+              </p>
             </div>
-            <div class="right-cards h-fit w-full my-5 flex flex-col gap-5 bg-[#4A4C70]/10 p-6 rounded-lg">
-              <h4 class="text-xl text-[#FDBE33] font-semibold underline">Mission</h4>
-              <p class="text-lg tracking-wide leading-2">"To inspire students, empower them to innovate, and facilitate their integration into diverse fields to collectively shape the trajectory of the next generation of humankind, fostering a global community of forward-thinkers and change-makers.
-
-                Additionally, to spearhead impactful initiatives, such as food donation drives and awareness campaigns, specifically targeted at rural regions, addressing critical issues of hunger and food insecurity, while simultaneously raising consciousness about the importance of social responsibility and collective action in fostering sustainable development and equitable opportunities for all."</p>
+            <div
+              class="right-cards h-fit w-full my-5 flex flex-col gap-5 bg-[#4A4C70]/10 p-6 rounded-lg"
+            >
+              <h4 class="text-xl text-[#FDBE33] font-semibold underline">
+                Mission
+              </h4>
+              <p class="text-lg tracking-wide leading-2">
+                "To inspire students, empower them to innovate, and facilitate
+                their integration into diverse fields to collectively shape the
+                trajectory of the next generation of humankind, fostering a
+                global community of forward-thinkers and change-makers.
+                Additionally, to spearhead impactful initiatives, such as food
+                donation drives and awareness campaigns, specifically targeted
+                at rural regions"
+              </p>
             </div>
-            <div class="right-cards h-fit w-full my-5 flex flex-col gap-5 bg-[#4A4C70]/10 p-6 rounded-lg">
-              <h4 class="text-xl text-[#FDBE33] font-semibold underline">Vision</h4>
-              <p class="text-lg tracking-wide leading-2">"To cultivate the next generation of entrepreneurs, our vision entails offering skill-based education, empowering individuals with the knowledge, tools, and mindset necessary to thrive in today's dynamic business landscape, fostering innovation, resilience, and ethical leadership.
-
-                Furthermore, we aspire to extend our reach globally, by providing internship opportunities, training programs, and workshops designed to equip individuals with practical skills and real-world experience. Our commitment to quality education knows no bounds, as we aim to transcend geographical barriers and ensure access to high-quality educational resources and opportunities for personal and professional growth for individuals worldwide."</p>
+            <div
+              class="right-cards h-fit w-full my-5 flex flex-col gap-5 bg-[#4A4C70]/10 p-6 rounded-lg"
+            >
+              <h4 class="text-xl text-[#FDBE33] font-semibold underline">
+                Vision
+              </h4>
+              <p class="text-lg tracking-wide leading-2">
+                "To cultivate the next generation of entrepreneurs, our vision
+                entails offering skill-based education, empowering individuals
+                with the knowledge, tools, and mindset necessary to thrive in
+                today's dynamic business landscape, fostering innovation,
+                resilience, and ethical leadership. Furthermore, we aspire to
+                extend our reach globally"
+              </p>
             </div>
+          </div>
+          <div class="cards-wrapper-swiper flex md:hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper rounded-lg h-[62vh]">
+                <div class="swiper-slide">
+                  <div
+                    class="right-cards relative h-full flex flex-col items-start md:flex-col gap-5 p-6 bg-[#4a4c7020] rounded-lg"
+                  >
+                    <h4 class="text-xl text-[#FDBE33] font-semibold underline">
+                      About
+                    </h4>
+                    <p class="text-[14px] tracking-wide leading-2 text-left">
+                      Suvidha Mahila Mandal is a non-profit organization working
+                      to impart education among the financially challenged
+                      sections to help them realize parity in education and
+                      strength of little minds in building a promising future.
+                      The organization has provisions of student internships,
+                      student mentorship and the scope to volunteer.
+                    </p>
+                    <img class="h-[4vh] w-[4vh] absolute right-4 bottom-4" src="./Animation - 1713202273911.gif" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="right-cards relative h-full flex flex-col items-start md:flex-col gap-5 p-6 bg-[#4a4c7020] rounded-lg"
+                  >
+                    <h4 class="text-xl text-[#FDBE33] font-semibold underline">
+                      Mission
+                    </h4>
+                    <p class="text-[14px] tracking-wide leading-2 text-left">
+                      "To inspire students, empower them to innovate, and
+                      facilitate their integration into diverse fields to
+                      collectively shape the trajectory of the next generation
+                      of humankind, fostering a global community of
+                      forward-thinkers and change-makers. Additionally, to
+                      spearhead impactful initiatives, such as food donation
+                      drives and awareness campaigns, specifically targeted at
+                      rural regions"
+                    </p>
+                    <img class="h-[4vh] w-[4vh] absolute right-4 bottom-4" src="./Animation - 1713202273911.gif" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="right-cards relative h-full flex flex-col items-start md:flex-col gap-5 p-6 bg-[#4a4c7020] rounded-lg"
+                  >
+                    <h4 class="text-xl text-[#FDBE33] font-semibold underline">
+                      Vision
+                    </h4>
+                    <p class="text-[14px] tracking-wide leading-2 text-left">
+                      "To cultivate the next generation of entrepreneurs, our
+                      vision entails offering skill-based education, empowering
+                      individuals with the knowledge, tools, and mindset
+                      necessary to thrive in today's dynamic business landscape,
+                      fostering innovation, resilience, and ethical leadership.
+                      Furthermore, we aspire to extend our reach globally"
+                    </p>
+                    <img class="h-[4vh] w-[4vh] absolute right-4 bottom-4 rotate-180" src="./Animation - 1713202273911.gif" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="page3 h-screen w-full bg-red-200"></div>
-  </main>
+      <div class="page3 h-screen w-full bg-red-200"></div>
+    </main>
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

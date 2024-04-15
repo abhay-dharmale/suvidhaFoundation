@@ -36,7 +36,11 @@ const menuSwiper = () =>{
 const landingPageSwiper = () =>{
   let swiper = new Swiper(".landing-page-content .mySwiper", {
     loop: true,
-    // slidesPerView: 'auto',
+    effect: "fade",
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
@@ -48,12 +52,24 @@ const landingPageSwiper = () =>{
   });
 }
 
-const page2Anime = () => {
-
+const page2Swiper = () => {
+  var swiper = new Swiper(".cards-wrapper-swiper .mySwiper", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -400],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+  });
 }
 
 
 
 menuSwiper();
 landingPageSwiper();
-page2Anime();
+page2Swiper();
